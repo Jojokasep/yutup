@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Photo Booth App</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>📸 Photo Booth</h1>
+
+        <!-- Preview Kamera -->
+        <div class="camera-box">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="photo-canvas" style="display:none;"></canvas>
+        </div>
+
+        <!-- Tombol Aksi -->
+        <div class="controls">
+            <button id="btn-start" class="btn btn-primary">Buka Kamera</button>
+            <button id="btn-capture" class="btn btn-success" disabled>Ambil Foto</button>
+            <button id="btn-save" class="btn btn-info" disabled>Simpan ke Galeri</button>
+        </div>
+
+        <!-- Preview Hasil Foto -->
+        <div class="preview-box">
+            <h3>Hasil Foto:</h3>
+            <img id="photo-result" alt="Hasil jepretan akan muncul di sini" />
+        </div>
+    </div>
+
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
