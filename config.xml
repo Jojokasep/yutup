@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.photobooth.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>PhotoBoothApp</name>
+    <description>Aplikasi Photobooth Sederhana dengan Kamera dan Simpan ke Galeri.</description>
+    <author email="dev@example.com" href="https://example.com">
+        Developer
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+    <!-- Izin untuk Android -->
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+        </config-file>
+    </platform>
+
+    <plugin name="cordova-plugin-camera" spec="~6.0.0" />
+    <plugin name="cordova-plugin-file" spec="~7.0.0" />
+</widget>
