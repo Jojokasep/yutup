@@ -1,0 +1,29 @@
+{
+  "name": "com.photobooth.app",
+  "displayName": "PhotoBoothApp",
+  "version": "1.0.0",
+  "description": "Aplikasi Photobooth Sederhana",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Developer",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^12.0.0",
+    "cordova-plugin-camera": "^6.0.0",
+    "cordova-plugin-file": "^7.0.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-camera": {},
+      "cordova-plugin-file": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}
